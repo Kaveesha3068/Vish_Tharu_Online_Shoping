@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Login - Vish Tharu Lovely Shop</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/animations.css">
+</head>
+<body class="admin-page">
+    <nav class="navbar">
+        <div class="logo-container">
+            <img src="../images/logo.png" alt="Vish Tharu Lovely Shop" class="logo-image">
+            <span class="logo-text">Vish Tharu Lovely Shop</span>
+        </div>
+        <div class="nav-links">
+            <a href="../index.html">Home</a>
+            <a href="../products.html">Products</a>
+            <a href="login.html" class="active">Admin Login</a>
+        </div>
+    </nav>
+
+    <main>
+        <div class="login-container animate-fade-in">
+            <h1>Admin Login</h1>
+            <form id="loginForm" class="admin-form">
+                <div class="form-group">
+                    <label for="username">Username</label>
+                    <input type="text" id="username" name="username" required>
+                </div>
+                <div class="form-group">
+                    <label for="password">Password</label>
+                    <input type="password" id="password" name="password" required>
+                </div>
+                <div class="form-hint">
+                    <small>Default credentials: admin / admin</small>
+                </div>
+                <button type="submit" class="btn-primary">Login</button>
+            </form>
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Vish Tharu Lovely Shop. All rights reserved.</p>
+    </footer>
+
+    <script src="../js/admin/login.js"></script>
+</body>
+</html>

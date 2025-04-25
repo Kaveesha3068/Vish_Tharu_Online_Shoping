@@ -1,0 +1,57 @@
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="logo-container">
+            <a href="index.html" class="logo-text">Vish&Tharu Lovely Shop</a>
+        </div>
+        <button class="mobile-menu-toggle" aria-label="Toggle navigation menu">
+            <i class="fas fa-bars"></i>
+        </button>
+        <div class="nav-links">
+            <a href="index.html">Home</a>
+            <a href="products.html">Products</a>
+            <a href="about.html" class="active">About Us</a>
+            <a href="contact.html">Contact</a>
+        </div>
+    </nav>
+
+    <!-- Footer Section -->
+    <!-- ... existing code ... -->
+
+    <!-- Font Awesome for icons -->
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+    
+    <!-- Custom JavaScript -->
+    <script>
+        // Mobile menu toggle functionality
+        document.addEventListener('DOMContentLoaded', function() {
+            const mobileMenuToggle = document.querySelector('.mobile-menu-toggle');
+            const navLinks = document.querySelector('.nav-links');
+            
+            if (mobileMenuToggle && navLinks) {
+                mobileMenuToggle.addEventListener('click', function() {
+                    navLinks.classList.toggle('expanded');
+                    navLinks.classList.toggle('collapsed');
+                });
+                
+                // Initialize menu state
+                if (window.innerWidth <= 768) {
+                    navLinks.classList.add('collapsed');
+                }
+                
+                // Update on window resize
+                window.addEventListener('resize', function() {
+                    if (window.innerWidth <= 768) {
+                        if (!navLinks.classList.contains('expanded')) {
+                            navLinks.classList.add('collapsed');
+                        }
+                    } else {
+                        navLinks.classList.remove('collapsed');
+                        navLinks.classList.remove('expanded');
+                    }
+                });
+            }
+        });
+    </script>
+</body>
+<!-- ... existing code ... --> 

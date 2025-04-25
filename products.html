@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Our Products - Vish Tharu Lovely Shop</title>
+    
+    <!-- Primary Meta Tags -->
+    <meta name="title" content="Our Products - Vish Tharu Lovely Shop">
+    <meta name="description" content="Browse our extensive collection of fashion items, accessories, and more. Find the perfect style with our curated selection of products.">
+    <meta name="keywords" content="fashion products, accessories, clothing, jewelry, bags, shoes, online shopping, Sri Lanka">
+    <meta name="author" content="Vish Tharu Lovely Shop">
+    <meta name="robots" content="index, follow">
+    
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://vishtharulovelyshop.com/products.html">
+    <meta property="og:title" content="Our Products - Vish Tharu Lovely Shop">
+    <meta property="og:description" content="Browse our extensive collection of fashion items, accessories, and more. Find the perfect style with our curated selection of products.">
+    <meta property="og:image" content="https://vishtharulovelyshop.com/images/products-hero.jpg">
+    
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://vishtharulovelyshop.com/products.html">
+    <meta property="twitter:title" content="Our Products - Vish Tharu Lovely Shop">
+    <meta property="twitter:description" content="Browse our extensive collection of fashion items, accessories, and more. Find the perfect style with our curated selection of products.">
+    <meta property="twitter:image" content="https://vishtharulovelyshop.com/images/products-hero.jpg">
+    
+    <!-- Canonical URL -->
+    <link rel="canonical" href="https://vishtharulovelyshop.com/products.html">
+    
+    <!-- Structured Data -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "CollectionPage",
+        "name": "Our Products",
+        "description": "Browse our extensive collection of fashion items and accessories",
+        "url": "https://vishtharulovelyshop.com/products.html",
+        "mainEntity": {
+            "@type": "ItemList",
+            "itemListElement": []
+        }
+    }
+    </script>
+    
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/animations.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="logo-container">
+            <a href="index.html" class="logo-text">Vish&Tharu Lovely Shop</a>
+        </div>
+        <button class="mobile-menu-toggle" aria-label="Toggle navigation menu">
+            <i class="fas fa-bars"></i>
+        </button>
+        <div class="nav-links">
+            <a href="index.html">Home</a>
+            <a href="products.html" class="active">Products</a>
+            <a href="about.html">About Us</a>
+            <a href="contact.html">Contact</a>
+        </div>
+    </nav>
+
+    <main>
+        <section class="product-hero">
+            <div class="product-hero-content">
+                <h1 class="animate-fade-in">Explore Our Collection</h1>
+                <p class="animate-slide-up">Find the perfect items that match your style</p>
+            </div>
+            <div class="product-hero-overlay"></div>
+        </section>
+
+        <section class="product-filters">
+            <div class="filter-container">
+                <div class="search-box">
+                    <input type="text" id="searchInput" placeholder="Search products...">
+                    <button id="searchBtn"><i class="fas fa-search"></i></button>
+                </div>
+                <div class="category-filters">
+                    <button class="filter-btn active" data-category="all">All</button>
+                    <button class="filter-btn" data-category="Clothing">Clothing</button>
+                    <button class="filter-btn" data-category="Accessories">Accessories</button>
+                    <button class="filter-btn" data-category="Jewelry">Jewelry</button>
+                    <button class="filter-btn" data-category="Beauty">Beauty</button>
+                    <button class="filter-btn" data-category="Other">Other</button>
+                </div>
+            </div>
+        </section>
+
+        <section class="products-section">
+            <h2 class="section-title">Our Products</h2>
+            <p class="results-count" id="resultsCount"></p>
+            <div class="product-grid" id="productsContainer">
+                <!-- Products will be loaded dynamically -->
+            </div>
+            <div id="noResults" class="no-results" style="display: none;">
+                <i class="fas fa-search"></i>
+                <p>No products found. Try a different search term or category.</p>
+            </div>
+        </section>
+
+        <section class="product-cta">
+            <div class="cta-content">
+                <h2>Can't find what you're looking for?</h2>
+                <p>Contact us directly and we'll help you find the perfect item!</p>
+                <a href="https://wa.me/94757997430" class="whatsapp-btn">
+                    <i class="fab fa-whatsapp"></i> Contact Us on WhatsApp
+                </a>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-logo">
+                <img src="images/logo.png" alt="Vish Tharu Lovely Shop" class="logo-image">
+                <h3>Vish Tharu Lovely Shop</h3>
+            </div>
+            <div class="footer-links">
+                <h4>Quick Links</h4>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="products.html">Products</a></li>
+                    <li><a href="#">Featured</a></li>
+                </ul>
+            </div>
+            <div class="footer-contact">
+                <h4>Contact Us</h4>
+                <p><i class="fas fa-map-marker-alt"></i> Gampola, Sri Lanka</p>
+                <p><i class="fas fa-phone"></i> +94757997430</p>
+                <div class="social-links">
+                    <a href="#" class="social-icon"><i class="fab fa-facebook"></i></a>
+                    <a href="#" class="social-icon"><i class="fab fa-instagram"></i></a>
+                    <a href="https://wa.me/94757997430" class="social-icon"><i class="fab fa-whatsapp"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2025 Vish Tharu Lovely Shop. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="js/products.js"></script>
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+    <script>
+        // Mobile menu toggle functionality
+        document.addEventListener('DOMContentLoaded', function() {
+            const mobileMenuToggle = document.querySelector('.mobile-menu-toggle');
+            const navLinks = document.querySelector('.nav-links');
+            
+            if (mobileMenuToggle && navLinks) {
+                mobileMenuToggle.addEventListener('click', function() {
+                    navLinks.classList.toggle('expanded');
+                    navLinks.classList.toggle('collapsed');
+                });
+                
+                // Initialize menu state
+                if (window.innerWidth <= 768) {
+                    navLinks.classList.add('collapsed');
+                }
+                
+                // Update on window resize
+                window.addEventListener('resize', function() {
+                    if (window.innerWidth <= 768) {
+                        if (!navLinks.classList.contains('expanded')) {
+                            navLinks.classList.add('collapsed');
+                        }
+                    } else {
+                        navLinks.classList.remove('collapsed');
+                        navLinks.classList.remove('expanded');
+                    }
+                });
+            }
+        });
+    </script>
+</body>
+</html>
